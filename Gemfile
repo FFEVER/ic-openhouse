@@ -50,7 +50,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-byebug', '~> 3.6'
   gem 'rubocop-airbnb'
-  gem "dotenv-rails", require: "dotenv/rails-now"
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
 end
 
 group :development do
@@ -68,6 +68,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem "database_cleaner"
+  gem "shoulda-matchers", git: "https://github.com/thoughtbot/shoulda-matchers.git", branch: "rails-5"
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
