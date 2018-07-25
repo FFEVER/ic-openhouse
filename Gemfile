@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -35,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'config', '~> 1.7'
 gem 'hash_dot', '~> 2.4', '>= 2.4.1'
+
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'kaminari', '~> 1.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
