@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -41,12 +39,18 @@ gem 'hash_dot', '~> 2.4', '>= 2.4.1'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'kaminari', '~> 1.1.1'
 
+gem "rack-attack"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'awesome_print', require: 'ap'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry-byebug', '~> 3.6'
+  gem 'rubocop-airbnb'
+  gem "dotenv-rails", require: "dotenv/rails-now"
 end
 
 group :development do
