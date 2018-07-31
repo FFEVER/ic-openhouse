@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap-datepicker";
+@import "bootstrap";
+@import "font-awesome";
+
+//*------------------------------------*
+//  Theme CSS
+//*------------------------------------*
+
+@import "theme/*";
+
+//*------------------------------------*
+//  Devise CSS
+//*------------------------------------*
+
+@import "app/**/*";
