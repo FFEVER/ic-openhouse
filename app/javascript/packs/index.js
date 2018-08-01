@@ -5,9 +5,7 @@ import App from "./App";
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
-    <Router>
-      <App />
-    </Router>,
+      <App />,
     document.getElementById("root")
   );
 });
