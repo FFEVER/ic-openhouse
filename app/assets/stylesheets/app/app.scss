@@ -1,0 +1,45 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@import "theme/colors";
+
+$global-space: 30px;
+$ic-width: 1230px;
+$ic-width-mobile: 580px;
+$ic-width-tablet: 900px;
+$ic-width-tablet-l: 1200px;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 24px;
+  font-family: "kanit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
