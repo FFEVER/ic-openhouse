@@ -42,7 +42,7 @@ gem 'kaminari', '~> 1.1.1'
 gem 'webpacker', '~> 3.5'
 gem "rack-attack"
 
-gem 'font-awesome-rails'
+# gem 'font-awesome-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
