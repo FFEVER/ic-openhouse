@@ -2,6 +2,7 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
   Link
 } from 'react-router-dom'
 
@@ -32,21 +33,23 @@ const CustomLink = ({ children, to, exact }) => (
 
 class App extends React.Component {
   render() {
-    debugger
     return (
       <Router>
         <div>
-            <CustomLink exact={true} to="/">
-              Home
-            </CustomLink>
-            <CustomLink to="/contact">
-              Contact
-            </CustomLink>
+          <CustomLink exact={true} to="/">
+            Home
+          </CustomLink>
+          <CustomLink to="/contact">
+            Contact
+          </CustomLink>
 
           <hr/>
 
-          <Route exact path="/" component={Home}/>
-          <Route path="/contact" component={Contact}/>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/contact" component={Contact}/>
+            <Route render={() => (<div> Sorry, this page does not exist. </div>)} />
+          </Switch>
         </div>
       </Router>
     )
