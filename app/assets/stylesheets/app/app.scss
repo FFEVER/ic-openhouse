@@ -93,7 +93,6 @@ table {
 .Hero {
   height: 100vh;
   width: 100vw;
-  padding: 0;
 
   &--green {
     background-color: green;
@@ -104,11 +103,8 @@ table {
   }
 }
 
-.Hero {
-  height: 100vh;
-  width: 100vw;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(image-path("hero_background"));
+.ParticlesSpace{
+  cursor: pointer;
+  margin: 0;
+  paddin: 0;
 }

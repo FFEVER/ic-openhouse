@@ -7,6 +7,7 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
+        <Hero />
         <div className="Hero Hero--yellow"></div>
         <div className="Hero Hero--green"></div>
       </div>
