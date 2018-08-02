@@ -66,7 +66,7 @@ table {
 
 .navbar {
   font-size: 18px;
-  color: $lightgray;
+  color: $blue-navy-light;
 
   .navbar-brand {
     img {
@@ -93,7 +93,44 @@ table {
 .Hero {
   height: 100vh;
   width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
+  .logo-row {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .logo-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  img {
+    &.rabbit {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    &.text {
+      max-width: 300px;
+      max-height: 300px;
+      margin-bottom: -150px;
+
+      &:first-child {
+        margin-top: -150px;
+      }
+    }
+  }
   &--green {
     background-color: green;
   }
@@ -103,8 +140,12 @@ table {
   }
 }
 
-.ParticlesSpace{
+.ParticlesSpace {
   cursor: pointer;
   margin: 0;
   paddin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
 }
