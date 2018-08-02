@@ -9,6 +9,26 @@ $ic-width-mobile: 580px;
 $ic-width-tablet: 900px;
 $ic-width-tablet-l: 1200px;
 
+@font-face {
+  font-family: "Browallia New";
+  src: url(/assets/fonts/Browallia_New.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Axis";
+  src: url(/assets/fonts/Axis.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url(/assets/fonts/Circular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Supermarket";
+  src: url(/assets/fonts/Supermarket.ttf) format("truetype");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -42,4 +62,44 @@ ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.navbar {
+  font-size: 18px;
+  color: $lightgray;
+
+  .navbar-brand {
+    img {
+      max-height: 40px;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $gray-text;
+      transition: color 200ms linear;
+    }
+  }
+
+  &.fixed-top {
+    &.scrolled {
+      background-color: #29304d !important;
+      transition: background-color 200ms linear;
+      color: $ghostwhite !important;
+    }
+  }
+}
+
+.Hero {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+
+  &--green {
+    background-color: green;
+  }
+
+  &--yellow {
+    background-color: yellow;
+  }
 }
