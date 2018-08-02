@@ -16,3 +16,16 @@
 
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+//*------------------------------------*
+//  Theme CSS
+//*------------------------------------*
+
+@import "theme/*";
+
+//*------------------------------------*
+//  App CSS
+//*------------------------------------*
+
+@import "app/**/*";
+
