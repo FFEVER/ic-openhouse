@@ -9,6 +9,7 @@ class Activities extends Component {
           title="Activities"
           borderColor="#29304d"
           backgroundColor="#ffffff"
+          contentBorderWidth="0px"
           fontColor="black"
           width="400px"
         />

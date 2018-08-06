@@ -170,10 +170,6 @@ table {
 .Activities {
   align-items: center;
   background-color: $gray-light;
-  // background-image: url(image-path("info_bg.svg"));
-  // background-position: top;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   color: $blue-navy;
   display: flex;
   font-family: "Circular";
@@ -185,7 +181,7 @@ table {
   &__row {
     display: flex;
     flex-wrap: wrap;
-    
+
     .Activities__col {
       display: flex;
       flex-direction: column;
@@ -217,12 +213,49 @@ table {
   }
 }
 
+.Schedule {
+  align-items: center;
+  background-color: $blue-navy;
+  color: white;
+  display: flex;
+  font-family: "Circular";
+  flex-direction: column;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+
+  &__row {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+    .Schedule__col {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin-right: 10px;
+      padding: 50px 20px;
+      width: 200px;
+      align-items: center;
+    }
+  }
+
+  img {
+    max-height: 100px;
+    margin-bottom: 20px;
+  }
+}
+
 .Magic {
   &__content {
     padding: 25px 40px 15px 20px;
     margin: 50px 100px;
     position: relative;
+    border-style: solid;
   }
+
   &__title {
     font-family: "Megrim";
   }
