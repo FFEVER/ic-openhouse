@@ -4,8 +4,11 @@ class MagicBox extends Component {
   // props: title borderColor bgColor fontColor
   render() {
     const contentStyle = {
+      borderColor: this.props.contentBorderColor,
+      borderWidth: this.props.contentBorderWidth,
       backgroundColor: this.props.backgroundColor,
-      width: this.props.width
+      width: this.props.width,
+      color: this.props.fontColor
     };
 
     const borderStyle = {

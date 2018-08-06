@@ -13,6 +13,7 @@ class Info extends Component {
           borderColor="#df5f18"
           backgroundColor="#ffffff"
           fontColor="black"
+          contentBorderWidth="0px"
         />
         <p>ระหว่างวันที่ 23-25 สิงหาคม 2018</p>
         <p>ณ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
