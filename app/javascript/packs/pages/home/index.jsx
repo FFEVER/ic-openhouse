@@ -20,9 +20,9 @@ class Home extends Component {
           <Schedule />
           <div className="Hero Hero--yellow" />
           <div className="Hero Hero--green" />
+          <Footer />
         </div>
       </ParallaxProvider>
-        <Footer />
     );
   }
 }
