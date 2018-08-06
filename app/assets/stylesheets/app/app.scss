@@ -98,6 +98,7 @@ table {
   justify-content: center;
   align-content: center;
   align-items: center;
+  cursor: pointer;
 
   .logo-row {
     height: 100vh;
@@ -120,6 +121,7 @@ table {
     &.rabbit {
       max-width: 400px;
       max-height: 400px;
+      position: relative;
     }
     &.text {
       max-width: 300px;
@@ -131,6 +133,7 @@ table {
       }
     }
   }
+
   &--green {
     background-color: green;
   }
