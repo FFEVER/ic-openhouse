@@ -3,15 +3,21 @@ import ParticlesSpace from "../../../plugins/particlesInSpace";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import SlideElement from "../../../plugins/magicScroll/SlideElement";
 
-      // <Parallax
-      //   className="custom-class"
-      //   offsetYMax={40}
-      //   offsetYMin={-40}
-      //   slowerScrollRate
-      // >
+// <Parallax
+//   className="custom-class"
+//   offsetYMax={40}
+//   offsetYMin={-40}
+//   slowerScrollRate
+// >
 class Hero extends Component {
   render() {
     return (
+      <Parallax
+        className="custom-class"
+        offsetYMax={40}
+        offsetYMin={-40}
+        slowerScrollRate
+      >
         <section className="Hero">
           <ParticlesSpace className="ParticlesSpace" />
           <div className="logo-row">
@@ -42,6 +48,7 @@ class Hero extends Component {
             </div>
           </div>
         </section>
+      </Parallax>
     );
   }
 }
