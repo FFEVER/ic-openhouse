@@ -9,8 +9,9 @@ class Navbar extends Component {
 
   onLinkClicked(event) {
     const moveTo = new MoveTo();
-    const target = document.getElementById(event.currentTarget.dataset.id);
+    const target = document.getElementById(event.target.dataset.id);
     moveTo.move(target);
+
   }
 
   navChangeColor() {
@@ -34,8 +35,8 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-transparent fixed-top">
-        <a id="navbar-brand" className="navbar-brand hidden" href="#">
-          <img src={require("./images/ic-logo-rabbit.png")} />
+        <a id="navbar-brand" className="navbar-brand hidden" data-id="root" onClick={this.onLinkClicked}>
+          <img src={require("./images/ic-logo-rabbit.png")} data-id="root" onClick={this.onLinkClicked}/>
         </a>
         <button
           className="navbar-toggler"
@@ -51,27 +52,27 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" data-id="description" onClick={this.onLinkClicked}>
+              <a className="nav-link" data-id="Info" onClick={this.onLinkClicked}>
                 DESCRIPTION
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-id="activities" onClick={this.onLinkClicked}>
+              <a className="nav-link" data-id="Activities" onClick={this.onLinkClicked}>
                 ACTIVITIES
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-id="schedule" onClick={this.onLinkClicked}>
+              <a className="nav-link" data-id="Schedule" onClick={this.onLinkClicked}>
                 SCHEDULE
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-id="courses" onClick={this.onLinkClicked}>
+              <a className="nav-link" data-id="Courses" onClick={this.onLinkClicked}>
                 COURSES
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-id="map" onClick={this.onLinkClicked}>
+              <a className="nav-link" data-id="Map" onClick={this.onLinkClicked}>
                 MAP
               </a>
             </li>

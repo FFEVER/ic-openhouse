@@ -76,12 +76,20 @@ table {
     img {
       max-height: 40px;
     }
-    &.hidden{
+    &.hidden {
       display: none;
     }
   }
 
-  a {
+  .nav-item {
+    :hover {
+      color: $gray-text;
+      transition: color 200ms linear;
+    }
+  }
+  
+  a:not([href]) {
+    cursor: pointer;
     &:hover {
       color: $gray-text;
       transition: color 200ms linear;
@@ -379,7 +387,7 @@ table {
   display: flex;
   font-family: "Circular";
   flex-direction: column;
-  padding: 60px 40px;
+  padding: 100px 40px;
   text-align: center;
   position: relative;
 
@@ -460,7 +468,7 @@ table {
       padding: 50px 20px;
       width: 200px;
       align-items: center;
-      transition: transform .2s;
+      transition: transform 0.2s;
 
       &:hover {
         transform: scale(1.25);
