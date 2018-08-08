@@ -2,6 +2,7 @@
   "name": "ic-openhouse",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.56",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "@rails/webpacker": "3.5",
     "axios": "^0.18.0",
