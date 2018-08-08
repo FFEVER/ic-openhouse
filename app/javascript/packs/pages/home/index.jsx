@@ -20,8 +20,6 @@ class Home extends Component {
           <Activities />
           <Schedule />
           <Map />
-          <div className="Hero Hero--yellow" />
-          <div className="Hero Hero--green" />
           <Footer />
         </div>
       </ParallaxProvider>
