@@ -43,7 +43,7 @@ html {
 
 body {
   font-size: 24px;
-  font-family: "kanit", sans-serif;
+  font-family: "Circular", sans-serif;
 }
 
 a {
@@ -71,6 +71,7 @@ table {
 .navbar {
   font-size: 18px;
   color: $blue-navy-light;
+  font-family: "kanit";
 
   .navbar-brand {
     img {
@@ -81,18 +82,15 @@ table {
     }
   }
 
-  .nav-item {
-    :hover {
-      color: $gray-text;
-      transition: color 200ms linear;
-    }
-  }
-  
   a:not([href]) {
     cursor: pointer;
     &:hover {
       color: $gray-text;
       transition: color 200ms linear;
+      -webkit-transition: color 200ms linear;
+      -moz-transition: color 200ms linear;
+      -o-transition: color 200ms linear;
+      -ms-transition: color 200ms linear;
     }
   }
 
@@ -100,6 +98,10 @@ table {
     &.scrolled {
       background-color: #29304d !important;
       transition: background-color 200ms linear;
+      -webkit-transition: color 200ms linear;
+      -moz-transition: color 200ms linear;
+      -o-transition: color 200ms linear;
+      -ms-transition: color 200ms linear;
       color: $ghostwhite !important;
     }
   }
@@ -226,6 +228,10 @@ table {
           font-size: 30px;
           color: darken($gray, 25%);
           transition: color 0.3s ease-in;
+          -webkit-transition: color 0.3s ease-in;
+          -moz-transition: color 0.3s ease-in;
+          -o-transition: color 0.3s ease-in;
+          -ms-transition: color 0.3s ease-in;
         }
       }
     }
@@ -385,7 +391,6 @@ table {
   background-size: cover;
   color: $blue-navy;
   display: flex;
-  font-family: "Circular";
   flex-direction: column;
   padding: 100px 40px;
   text-align: center;
@@ -401,7 +406,6 @@ table {
   background-color: $gray-light;
   color: $blue-navy;
   display: flex;
-  font-family: "Circular";
   flex-direction: column;
   padding: 60px 40px;
   text-align: center;
@@ -447,7 +451,6 @@ table {
   background-color: $blue-navy;
   color: white;
   display: flex;
-  font-family: "Circular";
   flex-direction: column;
   padding: 60px 40px;
   text-align: center;
@@ -469,9 +472,17 @@ table {
       width: 200px;
       align-items: center;
       transition: transform 0.2s;
+      -webkit-transition: transform 0.2s;
+      -moz-transition: transform 0.2s;
+      -o-transition: transform 0.2s;
+      -ms-transition: transform 0.2s;
 
       &:hover {
         transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        -ms-transform: scale(1.25);
       }
     }
   }
@@ -479,6 +490,120 @@ table {
   img {
     max-height: 100px;
     margin-bottom: 20px;
+  }
+}
+
+.Map {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px;
+  position: relative;
+  text-align: center;
+
+  &__row {
+    display: flex;
+    padding: 50px 100px;
+
+    @media only screen and (max-width: $ic-width-tablet) {
+      flex-direction: column;
+      padding: 50px 15px;
+    }
+
+    .Map__col {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+      word-wrap: break-word;
+      text-align: left;
+
+      @media only screen and (max-width: $ic-width-tablet) {
+        flex-direction: row;
+        padding: 0px;
+      }
+
+      .trans-icons__row {
+        display: flex;
+        justify-content: flex-end;
+        color: $blue-navy;
+        cursor: pointer;
+        margin: 2.5px 0px;
+        padding: 0px 30px;
+        text-align: right;
+        width: 250px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        @media only screen and (max-width: $ic-width-tablet) {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 15px;
+          height: 40px;
+
+          .trans-icon-text {
+            display: none;
+          }
+        }
+
+        &.active {
+          background-color: $gray-light;
+          border-radius: 50px 0px 0px 50px;
+
+          @media only screen and (max-width: $ic-width-tablet) {
+            border-radius: 25px 25px 0px 0px;
+            transform: scale(1.125);
+            -webkit-transform: scale(1.125);
+            -moz-transform: scale(1.125);
+            -o-transform: scale(1.125);
+            -ms-transform: scale(1.125);
+
+            img.trans-icon {
+              transform: scale(1.5);
+              -webkit-transform: scale(1.5);
+              -moz-transform: scale(1.5);
+              -o-transform: scale(1.5);
+              -ms-transform: scale(1.5);
+            }
+          }
+        }
+
+        img.trans-icon {
+          max-height: 30px;
+          padding-left: 10px;
+          @media only screen and (max-width: $ic-width-tablet) {
+            max-height: 20px;
+            padding-left: 0px;
+          }
+        }
+      }
+
+      &__content {
+        border-left: 2px solid $blue-navy;
+        font-size: 18px;
+        height: 220px;
+        padding: 10px 20px;
+        display: block;
+        overflow: auto;
+
+        @media only screen and (max-width: $ic-width-tablet) {
+          border-top: 2px solid $blue-navy;
+          border-left: 0px;
+        }
+
+        .trans-content {
+          display: none;
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
 
