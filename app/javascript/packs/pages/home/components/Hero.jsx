@@ -18,7 +18,7 @@ class Hero extends Component {
         offsetYMin={-40}
         slowerScrollRate
       >
-        <section className="Hero">
+        <section className="Hero" id="Hero">
           <ParticlesSpace className="ParticlesSpace" />
           <div className="logo-row">
             <div className="logo-col">
