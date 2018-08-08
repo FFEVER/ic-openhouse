@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Activities from "./components/Activities";
 import Info from "./components/Info";
 import Schedule from "./components/Schedule";
+import Map from "./components/Map";
 import Footer from "./components/Footer";
 
 class Home extends Component {
@@ -18,6 +19,7 @@ class Home extends Component {
           <Info />
           <Activities />
           <Schedule />
+          <Map />
           <div className="Hero Hero--yellow" />
           <div className="Hero Hero--green" />
           <Footer />
