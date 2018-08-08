@@ -76,6 +76,9 @@ table {
     img {
       max-height: 40px;
     }
+    &.hidden{
+      display: none;
+    }
   }
 
   a {
