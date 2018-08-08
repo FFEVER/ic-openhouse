@@ -1,14 +1,30 @@
 import React, { Component } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Activities from "./components/Activities";
+import Info from "./components/Info";
+import Schedule from "./components/Schedule";
+import Map from "./components/Map";
+import Footer from "./components/Footer";
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <div className="Hero Hero--yellow"></div>
-        <div className="Hero Hero--green"></div>
-      </div>
+      <ParallaxProvider>
+        <div>
+          <Navbar />
+          <Hero />
+          <Info />
+          <Activities />
+          <Schedule />
+          <Map />
+          <div className="Hero Hero--yellow" />
+          <div className="Hero Hero--green" />
+          <Footer />
+        </div>
+      </ParallaxProvider>
     );
   }
 }

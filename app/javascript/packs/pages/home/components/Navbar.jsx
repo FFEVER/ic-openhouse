@@ -21,14 +21,12 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav class="navbar navbar-expand-md navbar-transparent fixed-top">
-        <a class="navbar-brand" href="#">
-          <img
-            src={require("./images/ic-logo-rabbit.png")}
-          />
+      <nav className="navbar navbar-expand-md navbar-transparent fixed-top">
+        <a className="navbar-brand" href="#">
+          <img src={require("./images/ic-logo-rabbit.png")} />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarCollapse"
@@ -36,32 +34,32 @@ class Navbar extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#Info">
                 DESCRIPTION
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 ACTIVITIES
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 SCHEDULE
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 COURSES
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 MAP
               </a>
             </li>
