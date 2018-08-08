@@ -506,18 +506,20 @@ table {
   &__row {
     display: flex;
     padding: 50px 100px;
+    align-items: stretch;
 
     @media only screen and (max-width: $ic-width-tablet) {
       flex-direction: column;
       padding: 50px 15px;
+      width: 100%;
     }
 
     .Map__col {
       display: flex;
       flex-direction: column;
       padding: 10px 0px;
-      word-wrap: break-word;
       text-align: left;
+      word-wrap: break-word;
 
       @media only screen and (max-width: $ic-width-tablet) {
         flex-direction: row;
@@ -525,10 +527,10 @@ table {
       }
 
       .trans-icons__row {
-        display: flex;
-        justify-content: flex-end;
         color: $blue-navy;
         cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
         margin: 2.5px 0px;
         padding: 0px 30px;
         text-align: right;
@@ -540,11 +542,12 @@ table {
         transition: all 0.3s ease-in-out;
 
         @media only screen and (max-width: $ic-width-tablet) {
-          flex-direction: row;
-          justify-content: center;
           align-items: center;
-          width: 15px;
+          flex-direction: row;
           height: 40px;
+          justify-content: center;
+          width: 50px;
+          padding: 0px;
 
           .trans-icon-text {
             display: none;
@@ -585,15 +588,16 @@ table {
 
       &__content {
         border-left: 2px solid $blue-navy;
-        font-size: 18px;
-        height: 220px;
+        font-size: 20px;
+        height: 270px;
         padding: 10px 20px;
-        display: block;
-        overflow: auto;
+        overflow: scroll;
+        width: 530px;
 
         @media only screen and (max-width: $ic-width-tablet) {
           border-top: 2px solid $blue-navy;
           border-left: 0px;
+          width: 100%;
         }
 
         .trans-content {
