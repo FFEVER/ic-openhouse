@@ -18,7 +18,7 @@ class Navbar extends Component {
     $(function() {
       $(document).scroll(function() {
         var $nav = $(".navbar.fixed-top");
-        var $hero = $(".Hero.Hero--yellow");
+        var $hero = $(".Hero");
         var $brand = $("#navbar-brand");
 
         if ($(this).scrollTop() > $hero.height() - $nav.height()) {
