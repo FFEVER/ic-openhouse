@@ -385,10 +385,6 @@ table {
 .Info {
   align-items: center;
   background-color: $orange-cream;
-  background-image: url(image-path("info_bg.svg"));
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: $blue-navy;
   display: flex;
   flex-direction: column;
