@@ -169,15 +169,20 @@ class ParticlesSpace extends Component {
     initParticles(config.particleNumber);
   }
 
-  init(canvas,ctx) {
-    window.addEventListener("resize", this.resizeCanvas, false);
-    window.addEventListener("orientationchange", this.resizeCanvas, false);
-    this.resizeCanvas(canvas,ctx);
+  init(canvas, ctx) {
+    this.resizeCanvas(canvas, ctx);
   }
 
-  resizeCanvas(canvas,ctx) {
+  resizeCanvas(canvas, ctx) {
+    var ratio = window.devicePixelRatio || 1;
+    var w = screen.width * ratio;
+    var h = screen.height * ratio;
+
+    // canvas.width = window.innerWidth;
+    // canvas.height = window.outerHeight;
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = h;
+    
   }
 
   render() {

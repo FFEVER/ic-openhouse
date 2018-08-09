@@ -43,7 +43,11 @@ html {
 
 body {
   font-size: 24px;
-  font-family: "Circular", sans-serif;
+  font-family: "Circular", "Mitr", sans-serif;
+
+  @media (max-width: $ic-width-mobile) {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -52,6 +56,19 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  &::selection {
+    background: none; /* WebKit/Blink Browsers */
+  }
+  &::-moz-selection {
+    background: none; /* Gecko Browsers */
   }
 }
 
@@ -107,6 +124,81 @@ table {
   }
 }
 
+.animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon1 {
+  span {
+    background: #e65100;
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+  &.open {
+    span {
+      &:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+      }
+
+      &:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}
+
 .Hero {
   height: 100vh;
   width: 100vw;
@@ -139,6 +231,10 @@ table {
       max-width: 400px;
       max-height: 400px;
       position: relative;
+
+      @media (max-width: $ic-width-mobile) {
+        display: none;
+      }
     }
     &.text {
       max-width: 300px;
@@ -147,6 +243,12 @@ table {
 
       &:first-child {
         margin-top: -150px;
+      }
+
+      @media (max-width: $ic-width-mobile) {
+        max-width: 250px;
+        max-height: 250px;
+        margin-bottom: -130px;
       }
     }
   }
@@ -179,6 +281,10 @@ table {
     flex: auto;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: $ic-width-tablet) {
+      text-align: center;
+    }
 
     img {
       max-height: 40px;
@@ -420,6 +526,11 @@ table {
       width: 400px;
       align-items: center;
 
+      @media only screen and (max-width: $ic-width-tablet-l) {
+        margin-right: 0px;
+        width: 100%;
+      }
+
       &--chamber {
         background-color: $blue-navy;
         color: white;
@@ -472,6 +583,10 @@ table {
       -moz-transition: transform 0.2s;
       -o-transition: transform 0.2s;
       -ms-transition: transform 0.2s;
+
+      @media only screen and (max-width: $ic-width-mobile) {
+        padding: 20px 20px;
+      }
 
       &:hover {
         transform: scale(1.25);
@@ -608,11 +723,16 @@ table {
 }
 
 .Magic {
+  margin-left: 25px;
   &__content {
     padding: 25px 40px 15px 20px;
     margin: 50px 100px;
     position: relative;
     border-style: solid;
+    @media only screen and (max-width: $ic-width-mobile) {
+      margin: 25px 0px;
+      max-width: 250px;
+    }
   }
 
   &__title {
