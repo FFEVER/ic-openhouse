@@ -58,16 +58,16 @@ class Footer extends Component {
 
           <ul className="Footer__social">
             <a href="https://www.facebook.com/interkmitl/" target="_blank">
-              <li className="fb">
+              <li>
                 <i className="fab fa-facebook-f" />
                 <p>@interkmitl</p>
               </li>
             </a>
-            <li className="phone">
+            <li>
               <i className="fas fa-phone" />
               <p>064 963 3383 พี่ทศ</p>
             </li>
-            <li className="email">
+            <li>
               <i className="fas fa-envelope" />
               <p>thossakrai@outlook.com</p>
             </li>

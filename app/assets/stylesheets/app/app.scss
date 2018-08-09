@@ -302,11 +302,11 @@ table {
   }
 
   &__social {
-    flex: 0 250px;
+    flex: 0 200px;
     display: none;
     justify-content: flex-end;
     flex-direction: column;
-    width: 250px;
+    width: 200px;
 
     @media (max-width: $ic-width-mobile) {
       display: flex;
@@ -314,21 +314,9 @@ table {
       order: -1;
     }
 
-    @media (max-width: $ic-width-tablet) {
+    @media (max-width: $ic-width-tablet-l) {
       display: flex;
       flex: 0 0 auto;
-    }
-
-    .fb {
-      background-color: $facebook;
-    }
-
-    .phone {
-      background-color: $blue-navy-light;
-    }
-
-    .email {
-      background-color: $orange-light;
     }
 
     li {
@@ -352,7 +340,7 @@ table {
   }
 
   &__icon {
-    @media (max-width: $ic-width-tablet) {
+    @media (max-width: $ic-width-tablet-l) {
       display: none;
     }
     ul {
