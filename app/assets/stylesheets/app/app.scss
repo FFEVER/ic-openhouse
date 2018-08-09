@@ -169,7 +169,7 @@ table {
     padding-top: $global-space;
     padding-bottom: $global-space;
 
-    @media (max-width: $ic-width-tablet) {
+    @media (max-width: $ic-width-mobile) {
       padding: $global-space 0;
       flex-direction: column;
     }
@@ -196,44 +196,52 @@ table {
   }
 
   &__social {
-    flex: 0 200px;
+    flex: 0 250px;
     display: none;
     justify-content: flex-end;
     flex-direction: column;
+    width: 250px;
+
+    @media (max-width: $ic-width-mobile) {
+      display: flex;
+      flex: 0 0 auto;
+      order: -1;
+    }
 
     @media (max-width: $ic-width-tablet) {
       display: flex;
       flex: 0 0 auto;
-      flex-direction: row;
-      order: -1;
+    }
+
+    .fb {
+      background-color: $facebook;
+    }
+
+    .phone {
+      background-color: $blue-navy-light;
+    }
+
+    .email {
+      background-color: $orange-light;
     }
 
     li {
-      margin-left: $global-space * 0.25;
-
-      @media (max-width: $ic-width-tablet) {
-        margin-left: $global-space;
-
-        &:first-child {
-          margin-left: 0;
-        }
-      }
+      margin-bottom: $global-space * 0.25;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
       .fab,
       .fas {
         font-size: 20px;
         color: $white;
-
-        &:hover {
-          font-size: 30px;
-          color: darken($gray, 25%);
-          transition: color 0.3s ease-in;
-          -webkit-transition: color 0.3s ease-in;
-          -moz-transition: color 0.3s ease-in;
-          -o-transition: color 0.3s ease-in;
-          -ms-transition: color 0.3s ease-in;
-        }
       }
+    }
+
+    p {
+      color: $white;
+      font-size: 16px;
     }
   }
 

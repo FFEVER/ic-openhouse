@@ -35,7 +35,7 @@ class Footer extends Component {
                 <div className="link_bg link_bg--phone" />
                 <div className="link_title">
                   <a href="#">
-                    <span>088 888 8888</span>
+                    <span>064 963 3383 พี่ทศ</span>
                   </a>
                   <div className="icon">
                     <i className="fas fa-phone" />
@@ -46,7 +46,7 @@ class Footer extends Component {
                 <div className="link_bg link_bg--email" />
                 <div className="link_title">
                   <a href="#">
-                    <span>mail@mail.com</span>
+                    <span>thossakrai@outlook.com</span>
                   </a>
                   <div className="icon">
                     <i className="fas fa-envelope" />
@@ -57,21 +57,19 @@ class Footer extends Component {
           </div>
 
           <ul className="Footer__social">
-            <li>
-              <a href="https://www.facebook.com/interkmitl/" target="_blank">
+            <a href="https://www.facebook.com/interkmitl/" target="_blank">
+              <li className="fb">
                 <i className="fab fa-facebook-f" />
-              </a>
+                <p>@interkmitl</p>
+              </li>
+            </a>
+            <li className="phone">
+              <i className="fas fa-phone" />
+              <p>064 963 3383 พี่ทศ</p>
             </li>
-
-            <li>
-              <a href="#">
-                <i className="fas fa-phone" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-envelope" />
-              </a>
+            <li className="email">
+              <i className="fas fa-envelope" />
+              <p>thossakrai@outlook.com</p>
             </li>
           </ul>
         </div>
