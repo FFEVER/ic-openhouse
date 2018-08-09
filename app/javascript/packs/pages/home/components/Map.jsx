@@ -142,9 +142,9 @@ class Map extends Component {
 
           <div className="Map__col Map__col__content">
             <div id="car-content" className="trans-content show">
-              <h5>
+              <h1>
                 <b>รถยนต์ส่วนตัว</b>
-              </h5>
+              </h1>
               <p>
                 - เริ่มจากเส้นทางถนนศรีนครินทร์ที่แยกอ่อนนุช เข้าถนนอ่อนนุช
                 (สุขุมวิท77) ระยะทางประมาณ 16 กม. แยกเข้าถนนฉลองกรุง
@@ -166,9 +166,9 @@ class Map extends Component {
             </div>
 
             <div id="train-content" className="trans-content">
-              <h5>
+              <h1>
                 <b>รถไฟ</b>
-              </h5>
+              </h1>
               <p>
                 สายตะวันออก : สถานีต้นทางกรุงเทพฯ(หัวลำโพง) ผ่าน ยมราช อุรุพงศ์
                 พญาไท มักกะสัน อโศก คลองตัน สุขุมวิท71 หัวหมาก บ้านทับช้าง
@@ -213,9 +213,9 @@ class Map extends Component {
             </div>
 
             <div id="bus-content" className="trans-content">
-              <h5>
+              <h1>
                 <b>รถเมล์</b>
-              </h5>
+              </h1>
               <p>
                 - สาย 1013 พระโขนง - หัวตะเข้ (รถร่วมบริการ)
                 ลงรถตรงข้ามสวนพระนคร
@@ -231,9 +231,9 @@ class Map extends Component {
             </div>
 
             <div id="arl-content" className="trans-content">
-              <h5>
+              <h1>
                 <b>ARL</b>
-              </h5>
+              </h1>
               <p>
                 จากสถานีพญาไท ผ่านสถานีราชปรารภ มักกะสัน รามคำแหง หัวหมาก
                 บ้านทับช้าง ใช้เวลาประมาณ 30
@@ -243,9 +243,9 @@ class Map extends Component {
             </div>
 
             <div id="tworoll-content" className="trans-content">
-              <h5>
+              <h1>
                 <b>รถสองแถว</b>
-              </h5>
+              </h1>
               <p>- วงกลมวนซ้ายแอร์พอร์ตลิงค์ 7 บาท 5.00-22.00 15 นาที</p>
               <p>- หัวตะเข้ – เทคโน – หนองจอก 7 บาท 5.00-22.00 10 นาที</p>
               <p>- หัวตะเข้ – เทคโน – ฮอนด้า 7 บาท 5.00-22.00 10 นาที</p>
