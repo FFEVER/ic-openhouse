@@ -496,6 +496,26 @@ table {
 
   .ic-icon {
     max-width: 150px;
+
+    @media (max-width: $ic-width-mobile) {
+      max-width: 120px;
+    }
+  }
+
+  h1 {
+    font-size: 30px !important;
+
+    @media (max-width: $ic-width-mobile) {
+      font-size: 27px !important;
+    }
+  }
+
+  h2 {
+    font-size: 27px !important;
+
+    @media (max-width: $ic-width-mobile) {
+      font-size: 23px !important;
+    }
   }
 }
 
