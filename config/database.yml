@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: ic-openhouse_production
-  username: ic-openhouse
-  password: <%= ENV['IC-OPENHOUSE_DATABASE_PASSWORD'] %>
+  username: icopenhouse
+  # password: <%= ENV['IC-OPENHOUSE_DATABASE_PASSWORD'] %>
+  password: ic-openhouse-password

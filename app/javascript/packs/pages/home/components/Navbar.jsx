@@ -1,67 +1,122 @@
 import React, { Component } from "react";
 import $ from "jquery";
+import MoveTo from "moveto";
 
 class Navbar extends Component {
   componentWillMount() {
     this.navChangeColor();
   }
 
+  onLinkClicked(event) {
+    const moveTo = new MoveTo();
+    const target = document.getElementById(event.target.dataset.id);
+    moveTo.move(target);
+  }
+
+  onCollapesClicked(event) {
+    // Hide/show animation hamburger function
+    const $icon = $(".animated-icon1");
+    if ($icon.hasClass("open")) {
+      $icon.removeClass("open");
+    } else {
+      $icon.addClass("open");
+    }
+  }
+
   navChangeColor() {
     $(function() {
       $(document).scroll(function() {
         var $nav = $(".navbar.fixed-top");
-        var $hero = $(".Hero.Hero--yellow");
-        $nav.toggleClass(
-          "scrolled",
-          $(this).scrollTop() > $hero.height() - $nav.height()
-        );
+        var $hero = $(".Hero");
+        var $brand = $("#navbar-brand");
+
+        if ($(this).scrollTop() > $hero.height() - $nav.height()) {
+          $brand.removeClass("hidden");
+          $nav.addClass("scrolled");
+        } else {
+          $brand.addClass("hidden");
+          $nav.removeClass("scrolled");
+        }
       });
     });
   }
 
   render() {
     return (
-      <nav class="navbar navbar-expand-md navbar-transparent fixed-top">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-md navbar-transparent fixed-top">
+        <a
+          id="navbar-brand"
+          className="navbar-brand hidden"
+          data-id="root"
+          onClick={this.onLinkClicked}
+        >
           <img
             src={require("./images/ic-logo-rabbit.png")}
+            data-id="root"
+            onClick={this.onLinkClicked}
           />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={this.onCollapesClicked}
         >
-          <span class="navbar-toggler-icon" />
+          <div className="animated-icon1">
+            <span />
+            <span />
+            <span />
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#Info">
+
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                data-id="Info"
+                onClick={this.onLinkClicked}
+              >
                 DESCRIPTION
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                data-id="Activities"
+                onClick={this.onLinkClicked}
+              >
                 ACTIVITIES
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                data-id="Schedule"
+                onClick={this.onLinkClicked}
+              >
                 SCHEDULE
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                data-id="Courses"
+                onClick={this.onLinkClicked}
+              >
                 COURSES
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                data-id="Map"
+                onClick={this.onLinkClicked}
+              >
                 MAP
               </a>
             </li>
