@@ -555,10 +555,27 @@ table {
       &--hat {
         background-color: $blue-navy-light;
         color: white;
+
+        button {
+          margin-top: auto;
+          border-color: $white;
+          border-radius: 25px;
+          background-color: $blue-navy-light;
+          padding: 0 30px;
+        }
       }
+
       &--move {
         background-color: white;
         color: $blue-navy;
+
+        button {
+          margin-top: auto;
+          border-radius: 25px;
+          border-color: $blue-navy;
+          background-color: white;
+          padding: 0 30px;
+        }
       }
 
       h1 {
@@ -576,6 +593,7 @@ table {
       img {
         max-height: 250px;
         margin: 50px 0px;
+        flex-grow: 1;
       }
     }
   }
