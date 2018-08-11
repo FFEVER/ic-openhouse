@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: ic-openhouse_production
+  database: ic_openhouse_production
   username: icopenhouse
   # password: <%= ENV['IC-OPENHOUSE_DATABASE_PASSWORD'] %>
   password: ic-openhouse-password
