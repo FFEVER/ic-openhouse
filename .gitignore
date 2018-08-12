@@ -33,3 +33,8 @@ config/environments/*.local.yml
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

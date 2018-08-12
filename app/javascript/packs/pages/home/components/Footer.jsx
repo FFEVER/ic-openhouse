@@ -20,8 +20,11 @@ class Footer extends Component {
               <li className="var_nav">
                 <div className="link_bg link_bg--fb" />
                 <div className="link_title">
-                  <a href="https://www.facebook.com/interkmitl/">
-                    <span>SE KMITL</span>
+                  <a
+                    href="https://www.facebook.com/interkmitl/"
+                    target="_blank"
+                  >
+                    <span>@interkmitl</span>
                   </a>
                   <div className="icon">
                     <i className="fab fa-facebook-f" />
@@ -29,32 +32,10 @@ class Footer extends Component {
                 </div>
               </li>
               <li className="var_nav">
-                <div className="link_bg link_bg--li" />
-                <div className="link_title">
-                  <a href="#">
-                    <span>line</span>
-                  </a>
-                  <div className="icon">
-                    <i className="fab fa-line" />
-                  </div>
-                </div>
-              </li>
-              <li className="var_nav">
-                <div className="link_bg link_bg--tw" />
-                <div className="link_title">
-                  <a href="#">
-                    <span>twitter</span>
-                  </a>
-                  <div className="icon">
-                    <i className="fab fa-twitter" />
-                  </div>
-                </div>
-              </li>
-              <li className="var_nav">
                 <div className="link_bg link_bg--phone" />
                 <div className="link_title">
                   <a href="#">
-                    <span>088 888 8888</span>
+                    <span>064 963 3383 พี่ทศ</span>
                   </a>
                   <div className="icon">
                     <i className="fas fa-phone" />
@@ -65,7 +46,7 @@ class Footer extends Component {
                 <div className="link_bg link_bg--email" />
                 <div className="link_title">
                   <a href="#">
-                    <span>mail@mail.com</span>
+                    <span>thossakrai@outlook.com</span>
                   </a>
                   <div className="icon">
                     <i className="fas fa-envelope" />
@@ -76,30 +57,19 @@ class Footer extends Component {
           </div>
 
           <ul className="Footer__social">
-            <li>
-              <a href="https://www.facebook.com/interkmitl/">
+            <a href="https://www.facebook.com/interkmitl/" target="_blank">
+              <li>
                 <i className="fab fa-facebook-f" />
-              </a>
+                <p>@interkmitl</p>
+              </li>
+            </a>
+            <li>
+              <i className="fas fa-phone" />
+              <p>064 963 3383 พี่ทศ</p>
             </li>
             <li>
-              <a href="#">
-                <i className="fab fa-line" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-phone" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fas fa-envelope" />
-              </a>
+              <i className="fas fa-envelope" />
+              <p>thossakrai@outlook.com</p>
             </li>
           </ul>
         </div>

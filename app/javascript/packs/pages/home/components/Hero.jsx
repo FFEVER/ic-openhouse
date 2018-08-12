@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import ParticlesSpace from "../../../plugins/particlesInSpace";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import SlideElement from "../../../plugins/magicScroll/SlideElement";
+import $ from "jquery";
 
-// <Parallax
-//   className="custom-class"
-//   offsetYMax={40}
-//   offsetYMin={-40}
-//   slowerScrollRate
-// >
 class Hero extends Component {
   render() {
     return (
