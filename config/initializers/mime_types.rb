@@ -4,7 +4,7 @@
 # Mime::Type.register "text/richtext", :rtf
 Mime::Type.register "text/html", :html, %w( application/xhtml+xml ), %w( xhtml )
 Mime::Type.register "text/plain", :text, [], %w(txt)
-Mime::Type.register "text/javascript", :js, %w( application/javascript application/x-javascript )
+Mime::Type.register "application/javascript", :js, %w( application/javascript application/x-javascript )
 Mime::Type.register "text/css", :css
 Mime::Type.register "text/calendar", :ics
 Mime::Type.register "text/csv", :csv
