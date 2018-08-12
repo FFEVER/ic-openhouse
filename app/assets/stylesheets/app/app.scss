@@ -1,5 +1,5 @@
-@import "@fortawesome/fontawesome-free/css/all.min.css";
-@import "bootstrap/dist/css/bootstrap.min.css";
+// @import "@fortawesome/fontawesome-free/css/all.min.css";
+// @import "bootstrap/dist/css/bootstrap.min.css";
 
 @import "theme/colors";
 
@@ -27,11 +27,12 @@ html {
 }
 
 body {
-  font-size: 24px !important;
-  font-family: "Circular", "Mitr", sans-serif !important;
+  font-size: 18px !important;
+  // font-family: "Circular", "Mitr", sans-serif !important;
+  font-family: "Mitr", sans-serif !important;
 
   @media (max-width: $ic-width-mobile) {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -579,14 +580,14 @@ table {
       }
 
       h1 {
-        font-size: 30px;
+        font-size: 20px;
 
         @media only screen and (max-width: $ic-width-tablet) {
-          font-size: 27px;
+          font-size: 18px;
         }
 
         @media only screen and (max-width: $ic-width-mobile) {
-          font-size: 23px;
+          font-size: 16px;
         }
       }
 
@@ -746,7 +747,7 @@ table {
 
       &__content {
         border-left: 2px solid $blue-navy;
-        font-size: 20px;
+        font-size: 18px;
         height: 270px;
         padding: 10px 20px;
         overflow: scroll;
@@ -759,7 +760,7 @@ table {
         }
 
         h1 {
-          font-size: 30px;
+          font-size: 20px;
         }
 
         .trans-content {
