@@ -651,6 +651,64 @@ table {
   }
 }
 
+.Courses {
+  align-items: center;
+  background-color: $orange-cream;
+  color: $blue-navy;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .Courses__main-col {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+
+      .Courses__col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin-right: 20px;
+
+        &.course-icon {
+          padding: 0px 20px;
+          background-color: white;
+          border-radius: 50%;
+          min-width: 100px;
+          min-height: 100px;
+          max-width: 100px;
+          max-height: 100px;
+        }
+
+        &.course-content {
+          max-width: 260px;
+          min-width: 260px;
+
+          @media only screen and (max-width: $ic-width-mobile) {
+            margin-top: 10px;
+            text-align: center;
+          }
+        }
+
+        img {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}
+
 .Map {
   align-items: center;
   justify-content: center;
