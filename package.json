@@ -1,6 +1,9 @@
 {
   "name": "ic-openhouse",
   "private": true,
+  "scripts": {
+    "postinstall": "npm rebuild node-sass"
+  },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.56",
     "@fortawesome/fontawesome-free": "^5.2.0",
